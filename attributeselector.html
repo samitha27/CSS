@@ -1,0 +1,45 @@
+<DOCTYPE html>
+    <html>
+        <head>
+            <title>attribute selectors</title>
+            <style>
+                h1[id*="para"]{
+                background-color:aquamarine;
+                border:solid black 5px;
+                }
+                
+                
+            </style>
+        </head> 
+        <body>
+            <h1 id="para">this is child selector</h1>
+            <h1 id="para-graph">hello world</h1>
+            <h1 id="graph" para>beautiful wibes</h1>
+        </body>
+     </html>
+    
+    
+
+
+     <DOCTYPE html>
+        <html>
+            <head>
+                <title>psuedo element selectors</title>
+                <style>
+                    h1::selection{
+                    color:red;
+                    text-transform:uppercase;
+                    border:solid black 5px;
+                    }
+                    
+                     
+                </style>
+            </head> 
+            <body>
+                <h1 id="para">this is child selector</h1>
+                <h1 id="para-graph">hello world</h1>
+                <h1 id="graph" para>beautiful wibes</h1>
+            </body>
+         </html>
+        
+        

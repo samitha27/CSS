@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>simple selectors</title>
+        <style>
+            h1{                         
+                background-color: plum;
+                border:solid black 5px;
+            }
+            #first{
+                background-color: aqua;
+                border:double black 5px;
+            }
+            .second{
+                background-color: violet;
+                border:dotted black 5px;
+                text-align: center;
+                font-style: italic;
+            }
+
+
+        </style>
+    </head>
+    <body>
+        <h1>this is tag based selector</h1>
+        <div id="first">this is id based selector </div>
+        <p class ="second">this is class based simple selector</p>
+        <h2 class="second">what's happening</h2>
+    </body>
+</html>
+
+
+
+
+<DOCTYPE html>
+    <html>
+        <head>
+            <title>combinator selectors</title>
+            <style>
+                body>h1{        
+                    background-color:yellowgreen; /*child combinator selector*/
+                    border:solid blue;
+                }
+                div p{
+                    background-color: blue; /*descendent selector*/
+                    border:solid red;
+                }
+                div+h1{
+                    background-color:green; /*adjacent sibling selector*/
+                    border:solid red;
+                }
+                p~h1{
+                    background-color:black; /*general sibling selector*/
+                    border:solid red;
+                }
+            </style>
+        </head> 
+        <body>
+            <h1>this is child selector</h1>
+            <div>
+                <p>hello world</p>
+                <h1>beautiful wibes</h1>
+            </div>
+        </body>
+     </html>
+    
+    
